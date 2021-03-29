@@ -1,0 +1,21 @@
+{
+  "dogProfiles": [
+    {
+      "id": 1,
+      "nickname": "Pow Pow",
+      "name": "Paige",
+      "image": "https://static.wikia.nocookie.net/jurassicworld-evolution/images/2/28/648350_screenshots_20190711103904_1.jpg/revision/latest/top-crop/width/360/height/450?cb=20200526042521",
+      "favorite-treat": "candy",
+      "favorite-activity": "coding"
+    },
+    {
+      "id": 3,
+      "nickname": "Amazing",
+      "name": "Anika",
+      "image": "https://static.wikia.nocookie.net/jurassicworld-evolution/images/2/28/648350_screenshots_20190711103904_1.jpg/revision/latest/top-crop/width/360/height/450?cb=20200526042521",
+      "favorite-treat": "chocolate",
+      "favorite-activity": "sleeping"
+    }
+  ]
+}
+
