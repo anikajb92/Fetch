@@ -4,9 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>That's so fetch!</title>
+  <script defer src='index.js'></script>
 </head>
 <body>
-  <h1>That's so fetch!</h1>
-  <h2>Hackstreet {boiz} dog profiles</h2>
+  <header class="welcome">
+    <h1>That's so fetch!</h1>
+    <h2>Hackstreet {boiz} dog profiles</h2>  
+  </header>
+  <main class="main"> 
+    <form>
+      <label for="nickname">Enter your nickname:</label>
+      <input type="text" id="nickname" name="nickname" placeholder="type here">
+      </br>
+      <label for="name">Enter your human name:</label>
+      <input type="text" id="name" name="name" placeholder="type here">
+      </br>
+      <label for="favoriteTreat">Enter your favorite treat:</label>
+      <input type="text" id="favoriteTreat" name="favoriteTreat" placeholder="type here">
+      </br>
+      <label for="favoriteActivity">Enter your favorite activity:</label>
+      <input type="text" id="favoriteActivity" name="favoriteActivity" placeholder="type here">
+      </br>
+      <label for="dogImage">Enter your dog image URL:</label>
+      <input type="text" id="dogImage" name="dogImage" placeholder="type here">
+      </br>
+      <input type="submit" value="Go fetch!">
+    </form>
+  </main>
 </body>
 </html>
