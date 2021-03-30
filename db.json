@@ -1,21 +1,28 @@
 {
   "dogProfiles": [
     {
-      "id": 1,
       "nickname": "Pow Pow",
       "name": "Paige",
       "image": "https://cdn.shopify.com/s/files/1/1396/2353/products/Pet-Boxer-Costume-Dog-Clothes-Cat-Funny-Apperal-for-Halloween_grande.jpg?v=1531596083",
       "favoriteTreat": "candy",
-      "favoriteActivity": "coding"
+      "favoriteActivity": "coding",
+      "id": 1
     },
     {
-      "id": 3,
       "nickname": "Amazing",
       "name": "Anika",
       "image": "/anika-dog-image.png",
       "favoriteTreat": "chocolate",
-      "favoriteActivity": "sleeping"
+      "favoriteActivity": "sleeping",
+      "id": 2
+    },
+    {
+      "nickname": "Dangerous",
+      "name": "Dave",
+      "image": "https://sportivepets.com/wp-content/uploads/2020/07/James-Bond-French-Bulldog.jpg",
+      "favoriteTreat": "Peanuts",
+      "favoriteActivity": "Rubiks Cubs",
+      "id": 3
     }
   ]
 }
-
