@@ -1,13 +1,14 @@
-const baseUrl = "/db.json";
+// const baseUrl = "/db.json";
 const dogProfilesUrl = "http://localhost:3000/dogProfiles";
 const newDogProfileForm = document.getElementById('newDogProfileForm');
+let allDogsArray = [];
 
-fetch(baseUrl)
+fetch(dogProfilesUrl)
     .then((response) => response.json())
     .then((dogData) => {
         const allDogProfiles = document.querySelector('#allDogProfiles');
-        const dogProfiles = dogData.dogProfiles
-        dogProfiles.forEach(dogProfile => {
+        allDogsArray = dogData;
+        dogData.forEach(dogProfile => {
             const dogImage = document.createElement('img');
             const dogCard = document.createElement('div');
             const dogName = document.createElement('h1');
@@ -46,6 +47,7 @@ newDogProfileForm.addEventListener('submit', (event) => {
     allDogProfiles.append(dogCard)
     
     postNewDogProfile();
+    newDogProfileForm.reset()
 
     function postNewDogProfile() {
         const options = {
@@ -63,5 +65,6 @@ newDogProfileForm.addEventListener('submit', (event) => {
             })
         }
         fetch(dogProfilesUrl, options)
+        console.log(dogProfilesUrl)
     }
 })

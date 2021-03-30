@@ -1,28 +1,100 @@
 {
   "dogProfiles": [
     {
+      "id": 1,
       "nickname": "Pow Pow",
       "name": "Paige",
       "image": "https://cdn.shopify.com/s/files/1/1396/2353/products/Pet-Boxer-Costume-Dog-Clothes-Cat-Funny-Apperal-for-Halloween_grande.jpg?v=1531596083",
-      "favoriteTreat": "candy",
-      "favoriteActivity": "coding",
-      "id": 1
+      "favoriteTreat": "Candy",
+      "favoriteActivity": "Coding"
     },
     {
+      "id": 2,
       "nickname": "Amazing",
       "name": "Anika",
-      "image": "/anika-dog-image.png",
-      "favoriteTreat": "chocolate",
-      "favoriteActivity": "sleeping",
-      "id": 2
+      "image": "http://www.countyfairlabradoodles.com/publishImages/index~~element126.png",
+      "favoriteTreat": "Chocolate",
+      "favoriteActivity": "Sleeping"
     },
     {
+      "id": 3,
       "nickname": "Dangerous",
       "name": "Dave",
       "image": "https://sportivepets.com/wp-content/uploads/2020/07/James-Bond-French-Bulldog.jpg",
       "favoriteTreat": "Peanuts",
-      "favoriteActivity": "Rubiks Cubs",
-      "id": 3
+      "favoriteActivity": "Rubiks Cubs"
+    },
+    {
+      "nickname": "Excitable",
+      "name": "Eric",
+      "image": "https://i.ibb.co/5WyJt7w/PXL-20210324-020950130.jpg",
+      "favoriteTreat": "Chex Mix",
+      "favoriteActivity": "Gym",
+      "id": 4
+    },
+    {
+      "nickname": "Tenacious",
+      "name": "Tanner",
+      "image": "https://i.ibb.co/SXWRgYJ/Image-from-i-OS.jpg",
+      "favoriteTreat": "Tacos",
+      "favoriteActivity": "Snowboarding",
+      "id": 5
+    },
+    {
+      "nickname": "Hypothermic",
+      "name": "Haley",
+      "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/features/_2016/07_2016/prep_your_pooch_for_cold_features/1800x1200_prep_your_pooch_for_cold_features.jpg",
+      "favoriteTreat": "S'mores",
+      "favoriteActivity": "Skydiving",
+      "id": 6
+    },
+    {
+      "nickname": "Jumpin'",
+      "name": "Josh",
+      "image": "https://www.askideas.com/media/79/Pembroke-Welsh-Corgi-Dog-Jumping.jpg",
+      "favoriteTreat": "Animal crackers",
+      "favoriteActivity": "3D printing",
+      "id": 7
+    },
+    {
+      "nickname": "Scuba",
+      "name": "Steve",
+      "image": "https://i.pinimg.com/originals/ee/af/e0/eeafe01288feda2f8897d0d12b78aea1.jpg",
+      "favoriteTreat": "Pho",
+      "favoriteActivity": "Golfing",
+      "id": 8
+    },
+    {
+      "nickname": "Messy",
+      "name": "Jesse",
+      "image": "https://thehappypuppysite.com/wp-content/uploads/2018/04/dogs-with-beards-header.jpg",
+      "favoriteTreat": "Popcorn",
+      "favoriteActivity": "Spelunking",
+      "id": 9
+    },
+    {
+      "nickname": "Joker",
+      "name": "Jo",
+      "image": "https://i.redd.it/xg4ke9fjvng41.jpg",
+      "favoriteTreat": "Beef jerky",
+      "favoriteActivity": "Mixing IDM",
+      "id": 10
+    },
+    {
+      "nickname": "Dinkum",
+      "name": "Dane",
+      "image": "https://www.bigalspets.com/blog/wp-content/uploads/2017/03/39091995-axolotl-wallpapers.jpg",
+      "favoriteTreat": "Bloodworms",
+      "favoriteActivity": "Goat-herding",
+      "id": 11
+    },
+    {
+      "nickname": "Meerkat",
+      "name": "Meagan",
+      "image": "https://static.boredpanda.com/blog/wp-content/uploads/2020/01/Meet-Meerkat-and-a-St-Pet[…]ey-met-and-now-conquer-the-internet-5e219f3ecc6a0__880.jpg",
+      "favoriteTreat": "Apples",
+      "favoriteActivity": "placeholder",
+      "id": 12
     }
   ]
 }
