@@ -3,5 +3,10 @@ main {
 }
 
 img {
-    width:200px;
+    width:300px;
+    max-height: 400px;
+}
+
+#allDogProfiles {
+    display: flex;
 }

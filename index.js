@@ -45,7 +45,8 @@ newDogProfileForm.addEventListener('submit', (event) => {
 
     dogCard.append(dogImage, dogName, dogFavoriteTreat, dogFavoriteActivity);
     allDogProfiles.append(dogCard)
-    
+    console.log(allDogsArray);
+
     postNewDogProfile();
     newDogProfileForm.reset()
 

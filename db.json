@@ -13,15 +13,15 @@
       "nickname": "Amazing",
       "name": "Anika",
       "image": "http://www.countyfairlabradoodles.com/publishImages/index~~element126.png",
-      "favoriteTreat": "Chocolate",
-      "favoriteActivity": "Sleeping"
+      "favoriteTreat": "All the snacks",
+      "favoriteActivity": "Knitting"
     },
     {
       "id": 3,
       "nickname": "Dangerous",
       "name": "Dave",
       "image": "https://sportivepets.com/wp-content/uploads/2020/07/James-Bond-French-Bulldog.jpg",
-      "favoriteTreat": "Peanuts",
+      "favoriteTreat": "Raspberry Pie",
       "favoriteActivity": "Rubiks Cubs"
     },
     {
@@ -91,10 +91,58 @@
     {
       "nickname": "Meerkat",
       "name": "Meagan",
-      "image": "https://static.boredpanda.com/blog/wp-content/uploads/2020/01/Meet-Meerkat-and-a-St-Pet[…]ey-met-and-now-conquer-the-internet-5e219f3ecc6a0__880.jpg",
-      "favoriteTreat": "Apples",
-      "favoriteActivity": "placeholder",
+      "image": "https://i.ibb.co/YWwB5sz/Meerkat.jpg",
+      "favoriteTreat": "Pita chips",
+      "favoriteActivity": "Crafting",
       "id": 12
+    },
+    {
+      "nickname": "Magnificent",
+      "name": "Matt",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2018/03/540747396_344cde9fda_o.jpg",
+      "favoriteTreat": "Baguettes with lots of butter",
+      "favoriteActivity": "Breaking bones",
+      "id": 13
+    },
+    {
+      "nickname": "Alakazam",
+      "name": "Ahmed",
+      "image": "https://www.towergateinsurance.co.uk/media/6287823/GettyImages-1169368098.jpg",
+      "favoriteTreat": "Potions",
+      "favoriteActivity": "Teaching from his shower",
+      "id": 14
+    },
+    {
+      "nickname": "Dapper",
+      "name": "Damon",
+      "image": "https://i.imgur.com/QzroT4q.jpeg",
+      "favoriteTreat": "Cinnamon rolls",
+      "favoriteActivity": "Snowboarding",
+      "id": 15
+    },
+    {
+      "nickname": "Mellifluous",
+      "name": "Marc",
+      "image": "https://dustinabbott.net/wp-content/uploads/2014/03/53-Silver-Fox.jpg",
+      "favoriteTreat": "Pastries",
+      "favoriteActivity": "Etymology",
+      "id": 16
+    },
+    {
+      "nickname": "Eternal",
+      "name": "Emiley",
+      "image": "https://d.newsweek.com/en/full/1438738/dog-beach.jpg?w=1600&h=1200&q=88&f=106c0742e7d607498f3e1a0fe521ef23",
+      "favoriteTreat": "Water from the fountain of youth",
+      "favoriteActivity": "Listening to music",
+      "id": 17
+    },
+    {
+      "nickname": "Eternal",
+      "name": "Emiley",
+      "image": "https://d.newsweek.com/en/full/1438738/dog-beach.jpg?w=1600&h=1200&q=88&f=106c0742e7d607498f3e1a0fe521ef23",
+      "favoriteTreat": "Water from the fountain of youth",
+      "favoriteActivity": "Listening to music",
+      "id": 18
     }
   ]
 }
