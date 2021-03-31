@@ -1,7 +1,7 @@
 // const baseUrl = "/db.json";
 const dogProfilesUrl = "http://localhost:3000/dogProfiles";
-const newDogProfileForm = document.getElementById('newDogProfileForm');
 let allDogsArray = [];
+let addDog = false;
 
 fetch(dogProfilesUrl)
     .then((response) => response.json())
@@ -25,7 +25,22 @@ fetch(dogProfilesUrl)
         });
     })
 
-newDogProfileForm.addEventListener('submit', (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+    const dogFormContainer = document.getElementById("dogFormContainer");
+    const addDogButton = document.getElementById("addDogButton");
+    const newDogProfileForm = document.getElementById("newDogProfileForm");
+    dogFormContainer.style.display = "none";
+
+    addDogButton.addEventListener('click', () => {
+    addDog = !addDog;
+    if (addDog) {
+        dogFormContainer.style.display = "none";
+    } else {
+        dogFormContainer.style.display = "block";
+    }
+    })
+
+    newDogProfileForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const nickname = event.target.nickname.value;
     const name = event.target.name.value;
@@ -68,4 +83,6 @@ newDogProfileForm.addEventListener('submit', (event) => {
         fetch(dogProfilesUrl, options)
         console.log(dogProfilesUrl)
     }
-})
+    })
+})  
+
