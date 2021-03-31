@@ -17,11 +17,12 @@ fetch(dogProfilesUrl)
             const dogFavoriteTreat = document.createElement('p');
             const dogFavoriteActivity = document.createElement('p');
             const editProfileButton = document.createElement('button');
+            dogCard.setAttribute('class', 'dogCard')
 
             dogName.textContent = `${dogProfile.nickname} ${dogProfile.name}`;
             dogImage.src = dogProfile.image;
-            dogFavoriteTreat.textContent = dogProfile.favoriteTreat;
-            dogFavoriteActivity.textContent = dogProfile.favoriteActivity;
+            dogFavoriteTreat.textContent = `My favorite treat: ${dogProfile.favoriteTreat}`;
+            dogFavoriteActivity.textContent = `My favorite activity ${dogProfile.favoriteActivity}`;
             editProfileButton.innerText = "Need to make an update?";
             dogCard.dataset.id = dogProfile.id;
 

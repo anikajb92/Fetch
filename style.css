@@ -1,6 +1,3 @@
-main {
-    color:blue;
-}
 
 img {
     width:300px;
@@ -9,4 +6,25 @@ img {
 
 #allDogProfiles {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    text-align:center;
+}
+
+body {
+    font-family: Roboto;
+}
+
+main {
+    /* justify-content: center; */
+    /* display: flex; */
+}
+
+.dogCard {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
 }
