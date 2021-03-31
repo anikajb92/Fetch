@@ -1,3 +1,6 @@
+html {
+    position: relative;
+}
 
 img {
     width:300px;
@@ -6,7 +9,13 @@ img {
 
 #allDogProfiles {
     display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    height: 3000px;
+    width: 80vw;
+    margin: auto;
 }
 
 .welcome {
@@ -18,8 +27,8 @@ body {
 }
 
 main {
-    /* justify-content: center; */
-    /* display: flex; */
+    text-align: center;
+
 }
 
 .dogCard {
@@ -27,4 +36,5 @@ main {
     margin: 15px;
     padding: 5px;
     text-align: center;
+    width: 300px;
 }

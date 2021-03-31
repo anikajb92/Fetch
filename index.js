@@ -22,7 +22,7 @@ fetch(dogProfilesUrl)
             dogName.textContent = `${dogProfile.nickname} ${dogProfile.name}`;
             dogImage.src = dogProfile.image;
             dogFavoriteTreat.textContent = `My favorite treat: ${dogProfile.favoriteTreat}`;
-            dogFavoriteActivity.textContent = `My favorite activity ${dogProfile.favoriteActivity}`;
+            dogFavoriteActivity.textContent = `My favorite activity: ${dogProfile.favoriteActivity}`;
             editProfileButton.innerText = "Need to make an update?";
             dogCard.dataset.id = dogProfile.id;
 
