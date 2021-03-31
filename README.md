@@ -68,3 +68,14 @@ Hackstreet {boiz} as four-legged pups
     - Find a stylesheet or watch Ahmed's video
 - Identify what the input value should be and then match that to the profile ID card
   - POST will automatically set up an ID
+A user can delete or edit their card's info
+  - create editDogForm in HTML
+  - append editDogForm div to the dogCard
+  - create editButton with the same functionality to expand upon click
+  - add an event listener to the submitButton 
+      - add editDogForm values and point them to the DogProfile values
+      - default values for the editDogForm should be set to the existing values from db.json (so the user knows they're editing the right card)
+    - Reset key values to new input values from the form
+      - clear AND hide form upon submit
+    - PATCH
+  
