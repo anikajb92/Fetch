@@ -97,7 +97,7 @@ main {
   text-align: center;
 }
 
-.dogCard {
+.dogCardFront, .dogCardBack {
   margin: 15px;
   padding: 5px;
   text-align: center;
