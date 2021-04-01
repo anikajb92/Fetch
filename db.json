@@ -28,7 +28,7 @@
       "nickname": "Excitable",
       "name": "Eric",
       "image": "https://i.ibb.co/5WyJt7w/PXL-20210324-020950130.jpg",
-      "favoriteTreat": "Chex Mix",
+      "favoriteTreat": "Chex Party Mix",
       "favoriteActivity": "Gym",
       "id": 4
     },
@@ -135,6 +135,22 @@
       "favoriteTreat": "Water from the fountain of youth",
       "favoriteActivity": "Listening to music",
       "id": 17
+    },
+    {
+      "nickname": "Special",
+      "name": "Lady",
+      "image": "https://moderndogmagazine.com/sites/default/files/images/uploads/Dali--Carrie%2C%20Oliver%20Bluer.jpg",
+      "favoriteTreat": "Hugs",
+      "favoriteActivity": "Chillin",
+      "id": 18
+    },
+    {
+      "nickname": "Floppy",
+      "name": "Phil",
+      "image": "https://moderndogmagazine.com/sites/default/files/styles/slidehsow-banner/public/images/articles/top_images/JustChillinHeader.jpg?itok=9u_RIqdi",
+      "favoriteTreat": "Sloppy Joes",
+      "favoriteActivity": "Floppin'",
+      "id": 19
     }
   ]
 }

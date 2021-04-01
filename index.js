@@ -90,12 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dogName.textContent = `${nickname} ${name}`;
     dogImage.src = image;
-    dogFavoriteTreat.textContent = favoriteTreat;
-    dogFavoriteActivity.textContent = favoriteActivity;
-
-    dogCard.append(dogImage, dogName, dogFavoriteTreat, dogFavoriteActivity);
+    dogFavoriteTreat.textContent = `My favorite treat: ${favoriteTreat}`;
+    dogFavoriteActivity.textContent = `My favorite activity: ${favoriteActivity}`;
+    const editProfileButton = document.createElement('button');
+    dogCard.setAttribute('class', 'dogCard')
+    editProfileButton.setAttribute('class', 'editCardButton')
+    dogCard.append(dogImage, dogName, dogFavoriteTreat, dogFavoriteActivity, editProfileButton);
     allDogProfiles.append(dogCard)
     console.log(allDogsArray);
+    alert('Remember to refresh the page to see your dog profile!');
 
     postNewDogProfile();
     newDogProfileForm.reset()
