@@ -4,19 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>That's so fetch!</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="app.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 <body>
+  <div id="nav-wrapper" class="nav-wrapper">
+    <div class="authors">
+      <div>BY: PAIGE KELLY & </div>
+      <div>ANIKA BERNSTEIN</div>
+    </div>
+  </div>
   <header class="welcome">
     <h1>Welcome</h1>
     <h2>Fetch Your Hackstreet {Boiz} Dog Profiles</h2>
   </header>
   <hr>
   <main class="main">
-    <button id="addDogButton">Add your dog profile</button>
-    <div id="dogFormContainer">
+    <div id="addDogDiv">
+    <button id="addDogButton" class="addDogButton">Add your dog profile</button>
+  </div>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <div id="dogFormContainer" class="isNotVisible">
+      <button id="closeAddForm">X</button>
       <form id="newDogProfileForm">
         <label for="nickname">Enter your nickname:</label>
         <input type="text" id="nickname" name="nickname" placeholder="type here">
@@ -33,11 +43,12 @@
         <label for="dogImage">Enter your dog image URL:</label>
         <input type="text" id="dogImage" name="dogImage" placeholder="type here">
         </br>
-        <input type="submit" id="submitButton" value="Go fetch!">
+        <button type="submit" id="submitButton">Go fetch!</button>
       </form>
     </div>
     <section id="allDogProfiles"></section>
-    <div id="editProfileContainer">
+    <div id="editProfileContainer" class="isNotVisible">
+      <button id="closeEditForm">X</button>
       <form id="editDogProfileForm">
         <label for="nickname">Update your nickname:</label>
         <input type="text" id="updateNickname" name="nickname" placeholder="type here">
@@ -54,7 +65,7 @@
         <label for="dogImage">Update your dog image URL:</label>
         <input type="text" id="updateDogImage" name="dogImage" placeholder="type here">
         </br>
-        <input type="submit" id="editButton" value="Complete Update">
+        <button type="submit" id="editButton">Complete Update</button>
       </form>
     </div>
   </main>

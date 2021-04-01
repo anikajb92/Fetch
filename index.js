@@ -3,7 +3,7 @@ const dogProfilesUrl = "http://localhost:3000/dogProfiles/";
 let allDogsArray = [];
 let addDog = false;
 const editDogForm = document.getElementById('editDogProfileForm');
-editDogForm.style.display = "none";
+// editDogForm.style.display = "none";
 
 fetch(dogProfilesUrl)
     .then((response) => response.json())
@@ -18,6 +18,7 @@ fetch(dogProfilesUrl)
             const dogFavoriteActivity = document.createElement('p');
             const editProfileButton = document.createElement('button');
             dogCard.setAttribute('class', 'dogCard')
+            editProfileButton.setAttribute('class', 'editCardButton')
 
             dogName.textContent = `${dogProfile.nickname} ${dogProfile.name}`;
             dogImage.src = dogProfile.image;
@@ -25,21 +26,30 @@ fetch(dogProfilesUrl)
             dogFavoriteActivity.textContent = `My favorite activity: ${dogProfile.favoriteActivity}`;
             editProfileButton.innerText = "Need to make an update?";
             dogCard.dataset.id = dogProfile.id;
+            
+            const closeButton = document.getElementById('closeEditForm');
+            closeButton.addEventListener('click', () => {
+                editDogForm.parentElement.classList.remove("isVisible");
+                editDogForm.parentElement.classList.add("isNotVisible");
+            })
+            
 
             editProfileButton.addEventListener('click', () => {
-                editDogForm.style.display = "block";
                 editDogForm.nickname.value = dogProfile.nickname;
                 editDogForm.name.value = dogProfile.name;
                 editDogForm.dogImage.value = dogProfile.image;
                 editDogForm.favoriteTreat.value = dogProfile.favoriteTreat;
                 editDogForm.favoriteActivity.value = dogProfile.favoriteActivity;
+                editDogForm.parentElement.classList.add("isVisible");
+                editDogForm.parentElement.classList.remove("isNotVisible");
 
                 editDogForm.addEventListener('submit', (event) => {
                    event.preventDefault();
                    patch(editDogForm, dogProfile);
                    alert('Remember to refresh the page to see your changes!');
                     editDogForm.reset();
-                    editDogForm.style.display = "none";
+                    editDogForm.parentElement.classList.add("isNotVisible")
+                    editDogForm.parentElement.classList.remove("isVisible")
                 })
             })
 
@@ -53,16 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const dogFormContainer = document.getElementById("dogFormContainer");
     const addDogButton = document.getElementById("addDogButton");
     const newDogProfileForm = document.getElementById("newDogProfileForm");
-    dogFormContainer.style.display = "none";
-    editDogForm.style.display = "none";
+    const closeAddButton = document.getElementById('closeAddForm');
+    
+    closeAddButton.addEventListener('click', () => {
+        newDogProfileForm.parentElement.classList.remove("isVisible");
+        newDogProfileForm.parentElement.classList.add("isNotVisible");
+    })
 
     addDogButton.addEventListener('click', () => {
-    addDog = !addDog;
-    if (addDog) {
-        dogFormContainer.style.display = "none";
-    } else {
-        dogFormContainer.style.display = "block";
-    }
+        newDogProfileForm.parentElement.classList.add("isVisible");
+        newDogProfileForm.parentElement.classList.remove("isNotVisible");
     })
 
     newDogProfileForm.addEventListener('submit', (event) => {

@@ -78,4 +78,10 @@ A user can delete or edit their card's info
     - Reset key values to new input values from the form
       - clear AND hide form upon submit
     - PATCH
+- Create elements in JS (new div)
+  - picture, favorite treat, favorite activity, and button (whoAmI)
+  - dogCard-front, dogCard-back
+  - transform: rotateY (180deg)
+  - change visibility 
+
   
