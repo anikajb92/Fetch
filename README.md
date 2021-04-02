@@ -1,3 +1,60 @@
+Table of Contents
+About The Project
+Built With
+Getting Started
+Prerequisites
+Installation
+Contributing
+Contact
+Acknowledgements
+Pseudocode
+
+About the Project:
+Our website is a spin on the name game that the Hackstreet {boiz} cohort played on day 1. Each person in the Hackstreet {boiz} cohort has a profile card. The front of their profile card displays a picture of a dog or animal, their favorite activity, their favorite treat, and a 'Who am I?' button. Once the user clicks the 'Who am I?' button, the back of their card is revealed. The back of the card has all the details as the front of the card plus the person's name and a 'Need to make an update?' button. If the user clicks the 'Need to make an update?' button a form pops up in the middle of the screen. Here their card information is automatically  generated and they can change any of that information and complete the update by clicking the 'Complete update' button. In the edit profile form there is a close button which will make this form invisible. The user can also add a new dog profile by clicking the 'Add your dog profile' button. Once the user clicks that button, a new dog profile form will appear. In the add dog profile form there is a close button which will make this form invisible. Once the user completes the add dog profile form, the new profile will POST to the db.json and render on the page upon refresh.
+
+Built With:
+
+HTML
+CSS/SASS
+Javascript
+
+Getting Started
+
+Prerequisites
+In your terminal please start run `json-server --watch db.json`
+In a new tab in your terminal run 'lite-server'
+
+Contributing to project:
+
+Fork the Project
+Create your Feature Branch (git checkout -b development/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+Contact
+Anika Bernstein - anikajb92@gmail.com
+Paige Kelly - pckelly.co@gmail.com
+
+Project Link: https://github.com/anikajb92/Fetch/
+
+Acknowledgements
+Thank you:
+Blake Runyon
+Allen Richard Lea
+Chris Follen
+Emiley Palmquist
+Dane Dawson
+Ahmed Gaber
+Damon Chivers
+Marc Majcher
+
+w3schools
+codepen.io
+
+
+Pseudocode for project
+
 # Dog_generator
 Hackstreet {boiz} as four-legged pups
 
@@ -84,61 +141,3 @@ A user can delete or edit their card's info
   - transform: rotateY (180deg)
   - change visibility 
 
-
-______________________
-Table of Contents
-About The Project
-Built With
-Getting Started
-Prerequisites
-Installation
-Usage
-Contributing
-Contact
-Acknowledgements
-About The Project
-Product Name Screen Shot
-
-About the Project:
-Our website is a spin on the name game. Each person in the Hackstreet {boiz} cohort had a profile card.
-The front of their profile card displays a picture of a dog or animal, their favorite activity, their 
-favorite treat, their favorite activity and a 'Who am I?' button. Once the user clicks the 'Who am I?'
-button, the back of their card is revealed. The back of the card has all the details as the front of
-the card plus the person's name and a 'Need to make an update?' button. If the user clicks the 'Need to make an update?' button a form pops up in the middle of the screen. Here their card information is automatically 
-generated and they can change any of that information and complete the update by clicking 'Complete update'
-button. The user can also add a new dog profile by clicking the 'Add your dog profile' button. Once the user
-clicks that button, a new dog profile form will appear. Once the user completes that form, the new profile
-will POST to the db.json.
-
-Built With:
-
-HTML
-CSS
-Javascript
-
-Getting Started
-
-
-Prerequisites
-In your terminal please start run `json-server --watch db.json`
-In a new tab in your terminal run 'lite-server'
-
-Contributing to project:
-
-Fork the Project
-Create your Feature Branch (git checkout -b development/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-
-Contact
-Anika Bernstein - email@example.com
-Paige Kelly - pckelly.co@gmail.com
-
-Project Link: https://github.com/anikajb92/Fetch/
-
-Acknowledgements
-Thank you:
-Blake Runyon
-Allen Richard Lea
-Chris Follen
