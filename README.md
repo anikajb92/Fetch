@@ -1,4 +1,7 @@
-Table of Contents
+# Table of Contents
+
+- [Heading](#'About the Project')
+
 About The Project
 Built With
 Getting Started
