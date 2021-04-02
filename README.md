@@ -49,8 +49,9 @@ Ahmed Gaber
 Damon Chivers
 Marc Majcher
 
-w3schools
-codepen.io
+'https://www.w3schools.com/'
+'http://codepen.io/'
+'https://fonts.googleapis.com/css?family=Rubik:700&display=swap'
 
 
 Pseudocode for project
