@@ -15,14 +15,13 @@
 <body>
   <div id="nav-wrapper" class="nav-wrapper">
     <div class="authors">
-      <div>BY: PAIGE KELLY & </div>
-      <div>ANIKA BERNSTEIN</div>
+      <div>BY: PAIGE KELLY & ANIKA BERNSTEIN</div>
     </div>
+    <header class="welcome">
+      <h1>Welcome</h1>
+      <h2>Fetch Your Hackstreet {Boiz} Dog Profiles</h2>
+    </header>
   </div>
-  <header class="welcome">
-    <h1>Welcome</h1>
-    <h2>Fetch Your Hackstreet {Boiz} Dog Profiles</h2>
-  </header>
   <!-- <hr class="horizontalLine"> -->
   <main class="main">
     <div id="addDogDiv">
@@ -30,7 +29,7 @@
   </div>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <div id="dogFormContainer" class="isNotVisible">
-      <button id="closeAddForm">X</button>
+      <button id="closeAddForm" class="close">X</button>
       <form id="newDogProfileForm">
         <label for="nickname">Enter your nickname:</label>
         <input type="text" id="nickname" name="nickname" placeholder="type here">
@@ -47,12 +46,12 @@
         <label for="dogImage">Enter your dog image URL:</label>
         <input type="text" id="dogImage" name="dogImage" placeholder="type here">
         </br>
-        <button type="submit" id="submitButton">Go fetch!</button>
+        <button type="submit" id="submitButton" class="fetch">Go fetch!</button>
       </form>
     </div>
     <section id="allDogProfiles"></section>
     <div id="editProfileContainer" class="isNotVisible">
-      <button id="closeEditForm">X</button>
+      <button id="closeEditForm" class="close">X</button>
       <form id="editDogProfileForm">
         <label for="nickname">Update your nickname:</label>
         <input type="text" id="updateNickname" name="nickname" placeholder="type here">
@@ -69,7 +68,7 @@
         <label for="dogImage">Update your dog image URL:</label>
         <input type="text" id="updateDogImage" name="dogImage" placeholder="type here">
         </br>
-        <button type="submit" id="editButton">Complete Update</button>
+        <button type="submit" id="editButton" class="fetch">Complete Update</button>
       </form>
     </div>
   </main>
