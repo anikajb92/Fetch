@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [Heading](#'About the Project')
+- [About the Project](#about-the-Project)
 
 About The Project
 Built With
