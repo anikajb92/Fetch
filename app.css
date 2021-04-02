@@ -97,7 +97,7 @@ main {
   text-align: center;
 }
 
-.dogCardFront, .dogCardBack {
+.dogCard {
   margin: 15px;
   padding: 5px;
   text-align: center;
@@ -128,7 +128,7 @@ h1 {
   color:  #cb7197;
 }
 
-.isVisible {
+.isVisible, .dogCardBack.isVisible {
   height: 365px;
   width: 650px;
   background-color: #fff;
@@ -147,7 +147,7 @@ h1 {
   display: block;
 }
 
-.isNotVisible {
+.isNotVisible, .dogCardBack.isVisible {
   display: none;
 }
 
