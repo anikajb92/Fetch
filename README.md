@@ -17,7 +17,7 @@ Our website is a spin on the name game that the Hackstreet {boiz} cohort played 
 ![Alt Text](https://media.giphy.com/media/6kjpZz7Qhcf0vLsNzG/giphy.gif)
 
 ## Who am I? Reveal person's name & update profile
-![Alt Text](![Alt Text](https://media0.giphy.com/media/beyLQ9nMStOtrgainF/giphy.gif))
+![Alt Text](https://media0.giphy.com/media/beyLQ9nMStOtrgainF/giphy.gif)
 
 
 # Built With:
