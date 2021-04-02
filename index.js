@@ -7,12 +7,12 @@ const allDogProfiles = document.querySelector('#allDogProfiles');
 
 function createDogCardBack(dogProfile) {
     const dogCardBack = document.createElement('div');
+    dogCardBack.setAttribute('class', 'dogCardBack')
     const dogImage = document.createElement('img');
     const dogName = document.createElement('h1');
     const dogFavoriteTreat = document.createElement('p');
     const dogFavoriteActivity = document.createElement('p');
     const editProfileButton = document.createElement('button');
-    dogCardBack.setAttribute('class', 'dogCardBack')
     editProfileButton.setAttribute('class', 'editCardButton')
 
     dogName.textContent = `${dogProfile.nickname} ${dogProfile.name}`;
@@ -30,21 +30,28 @@ function createDogCardBack(dogProfile) {
 
 function createDogCardFront(dogProfile) {
     const dogCardFront = document.createElement('div');
+    dogCardFront.setAttribute('class', 'dogCardFront')
     const dogImage = document.createElement('img');
     const dogFavoriteTreat = document.createElement('p');
     const dogFavoriteActivity = document.createElement('p');
-    dogCardFront.setAttribute('class', 'dogCardFront')
+    const whoAmIButton = document.createElement('button');
+    whoAmIButton.innerText = "Who am I?"
+    const dogCardBack = document.getElementsByClassName('dogCardBack')
+
 
     dogImage.src = dogProfile.image;
     dogFavoriteTreat.textContent = `My favorite treat: ${dogProfile.favoriteTreat}`;
     dogFavoriteActivity.textContent = `My favorite activity: ${dogProfile.favoriteActivity}`;
 
-    dogCardFront.append(dogImage, dogFavoriteTreat, dogFavoriteActivity)
+    dogCardFront.append(dogImage, dogFavoriteTreat, dogFavoriteActivity, whoAmIButton)
     allDogProfiles.append(dogCardFront)
+
+    whoAmI(whoAmIButton, dogCardFront, dogCardBack)
 }
 
 function revealEditDogProfileForm(editProfileButton, dogProfile) {
     const closeButton = document.getElementById('closeEditForm');
+
     
     closeButton.addEventListener('click', () => {
         editDogForm.parentElement.classList.remove("isVisible");
@@ -59,7 +66,6 @@ function revealEditDogProfileForm(editProfileButton, dogProfile) {
         editDogForm.favoriteActivity.value = dogProfile.favoriteActivity;
         editDogForm.parentElement.classList.add("isVisible");
         editDogForm.parentElement.classList.remove("isNotVisible");
-        console.log(editDogForm)
 
         editDogForm.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -72,14 +78,38 @@ function revealEditDogProfileForm(editProfileButton, dogProfile) {
         })
 }
 
+function whoAmI(whoAmIButton, dogCardFront, dogCardBack) {
+    whoAmIButton.addEventListener('click', () => {
+      dogCardFront.classList.add("isNotVisible");
+      dogCardFront.classList.remove("isVisible");
+    })
+}
+
+function addNewDog() {
+    const addDogButton = document.getElementById("addDogButton");
+    const newDogProfileForm = document.getElementById("newDogProfileForm");
+    const closeAddButton = document.getElementById('closeAddForm');
+    
+    closeAddButton.addEventListener('click', () => {
+        newDogProfileForm.parentElement.classList.remove("isVisible");
+        newDogProfileForm.parentElement.classList.add("isNotVisible");
+    })
+
+    addDogButton.addEventListener('click', () => {
+        newDogProfileForm.parentElement.classList.add("isVisible");
+        newDogProfileForm.parentElement.classList.remove("isNotVisible");
+    })
+
+}
+
 fetch(dogProfilesUrl)
     .then((response) => response.json())
     .then((dogData) => {
         allDogsArray = dogData;
         dogData.forEach(dogProfile => {
-            createDogCardBack(dogProfile);
             createDogCardFront(dogProfile);
-         })
+            createDogCardBack(dogProfile);
+        })
     })
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -120,7 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
     editProfileButton.setAttribute('class', 'editCardButton')
     dogCard.append(dogImage, dogName, dogFavoriteTreat, dogFavoriteActivity, editProfileButton);
     allDogProfiles.append(dogCard)
-    console.log(allDogsArray);
     alert('Remember to refresh the page to see your dog profile!');
 
     postNewDogProfile();
@@ -142,7 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         }
         fetch(dogProfilesUrl, options)
-        console.log(dogProfilesUrl)
     }
     })
 })  
@@ -166,11 +194,5 @@ function patch(editDogForm, dogProfile) {
 
     fetch(`${dogProfilesUrl}${identifier}`, options)
     .then((response) => response.json())
-    //.then((data) => updateDogOnDom(data))
 }
-
-// function updateDogOnDom(dogData){
-//     //const id = document.querySelectorAll(`[data-id=${dogData.id}]`) // Need to get proper syntax
-//     console.log(id); // once we capture dogCard, then we can access/edit innerText
-// }
 
