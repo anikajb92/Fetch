@@ -1,16 +1,12 @@
 # Table of Contents
 
 - [About the Project](#about-the-Project)
-
-About The Project
-Built With
-Getting Started
-Prerequisites
-Installation
-Contributing
-Contact
-Acknowledgements
-Pseudocode
+[Built With](#built-with)
+[Getting Started Prerequisites](#getting-started-prerequisites)
+[Contribute to project](#contribute-to-project)
+[Contact](#contact)
+[Acknowledgements](#acknowledgments)
+[Pseudocode](#pseudocode)
 
 # About the Project:
 Our website is a spin on the name game that the Hackstreet {boiz} cohort played on day 1. Each person in the Hackstreet {boiz} cohort has a profile card. The front of their profile card displays a picture of a dog or animal, their favorite activity, their favorite treat, and a 'Who am I?' button. Once the user clicks the 'Who am I?' button, the back of their card is revealed. The back of the card has all the details as the front of the card plus the person's name and a 'Need to make an update?' button. If the user clicks the 'Need to make an update?' button a form pops up in the middle of the screen. Here their card information is automatically  generated and they can change any of that information and complete the update by clicking the 'Complete update' button. In the edit profile form there is a close button which will make this form invisible. The user can also add a new dog profile by clicking the 'Add your dog profile' button. Once the user clicks that button, a new dog profile form will appear. In the add dog profile form there is a close button which will make this form invisible. Once the user completes the add dog profile form, the new profile will POST to the db.json and render on the page upon refresh.
@@ -20,11 +16,11 @@ HTML
 CSS/SASS
 Javascript
 
-# Getting Started Prerequisites
+# Getting Started Prerequisites:
 In your terminal please start run `json-server --watch db.json`
 In a new tab in your terminal run 'lite-server'
 
-# Contributing to project:
+# Contribute to project:
 
 Fork the Project
 Create your Feature Branch (git checkout -b development/AmazingFeature)
