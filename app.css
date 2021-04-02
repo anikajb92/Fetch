@@ -147,7 +147,7 @@ h1 {
   display: block;
 }
 
-.isNotVisible, .dogCardBack.isVisible {
+.isNotVisible {
   display: none;
 }
 

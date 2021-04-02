@@ -28,7 +28,7 @@ function createDogCard(dogProfile) {
     dogCard.append(dogCardFront)
 
     const dogCardBack = document.createElement('div');
-    dogCardBack.setAttribute('class', 'dogCardBack')
+    // dogCardBack.setAttribute('class', 'dogCardBack')
     const dogImageBack = document.createElement('img');
     const dogName = document.createElement('h1');
     const dogFavoriteTreatBack = document.createElement('p');
@@ -45,7 +45,7 @@ function createDogCard(dogProfile) {
 
     dogCardBack.append(dogImageBack, dogName, dogFavoriteTreatBack, dogFavoriteActivityBack, editProfileButton)
     dogCard.append(dogCardBack)
-    dogCardBack.classList.add('isNotVisable')
+    dogCardBack.className = 'isNotVisible'
     console.log(dogCardBack)
 
     revealEditDogProfileForm(editProfileButton, dogProfile) 
@@ -157,8 +157,7 @@ function whoAmI(whoAmIButton, dogCardFront, dogCardBack) {
     whoAmIButton.addEventListener('click', () => {
       dogCardFront.classList.add("isNotVisible");
       dogCardFront.classList.remove("isVisible");
-      dogCardBack.classList.add('isVisable');
-      dogCardBack.classList.remove('isNotVisable')
+      dogCardBack.className = 'isVisable';
     })
 }
 
